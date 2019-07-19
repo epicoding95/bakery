@@ -6,7 +6,6 @@ namespace userShop.program
 {
     class bakeryShop
     {
-          
           private double _price{ get; set; }
             public bakeryShop()
             {
@@ -20,7 +19,7 @@ namespace userShop.program
     }
         public double breadPrice(int items2)
         {
-         double price = getPrice() * .66;
+         double price = getPrice() * 3.33;
          double totalPrice = price * items2;
          return totalPrice;
 
@@ -34,41 +33,26 @@ namespace userShop.program
 
    class pastryShop
     {
-          
           private double _price{ get; set; }
             public pastryShop()
             {
-           
             _price = 1;
-           
-
             }
-
+        //////////constructor
          public pastryShop(int pastryPrice)
         {
-        
          _price = pastryPrice;
          }
           public double getPrice()
         {
             return _price;
         }
-
         public double pastryPrice(int items)
         {
-            double price = getPrice() * 2.66;
+            double price = getPrice() * 1.66;
             double totalPrice = price * items;
             return totalPrice;
 
         }
-      
-        //  public checkOut()
-        // {
-        //     Console.Clear();
-        //      Console.WriteLine("Your total is" + newPastryPrice + newBreadPrice + ".");
-        // }
-
     }
-
-
 }
