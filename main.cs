@@ -19,8 +19,7 @@ namespace program
            Console.WriteLine("1. How many pastries you like to buy?");
             string pastryAnswer = Console.ReadLine();
             int newPastryAnswer = int.Parse(pastryAnswer);
-           int breadItems = 1;
-           int pastryItems = 1;
+           
            
 
 ///////////how many pastries the user wants to buy
