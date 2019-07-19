@@ -7,26 +7,25 @@ namespace userShop.program
     class bakeryShop
     {
           
-          private int _price{ get; set; }
+          private double _price{ get; set; }
             public bakeryShop()
             {
-           
             _price = 0;
-           
-
             }
-
-         public bakeryShop(int breadPrice)
+        ////////constructor
+         public bakeryShop(double BreadPrice)
         {
         
-         _price = breadPrice;
+         _price = BreadPrice;
     }
-        // public void breadprice()
-        // {
-        // newBreadPrice *3.33;
+        public double breadPrice(int items2)
+        {
+         double price = getPrice() * .66;
+         double totalPrice = price * items2;
+         return totalPrice;
 
-        // }
-        public int getPrice()
+        }
+        public double getPrice()
         {
             return _price;
         }
@@ -36,11 +35,11 @@ namespace userShop.program
    class pastryShop
     {
           
-          private int _price{ get; set; }
+          private double _price{ get; set; }
             public pastryShop()
             {
            
-            _price = 0;
+            _price = 1;
            
 
             }
@@ -50,16 +49,19 @@ namespace userShop.program
         
          _price = pastryPrice;
          }
-        // public  pastryPrice(NewPastryPrice)
-        // {
-        //  return (NewPastryPrice* 1.66);
-
-        // }
-        public int getPrice()
+          public double getPrice()
         {
             return _price;
         }
 
+        public double pastryPrice(int items)
+        {
+            double price = getPrice() * 2.66;
+            double totalPrice = price * items;
+            return totalPrice;
+
+        }
+      
         //  public checkOut()
         // {
         //     Console.Clear();
