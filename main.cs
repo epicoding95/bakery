@@ -8,6 +8,8 @@ namespace program
     {
         public static void Main()
         {
+             Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Black;
           ////sets up the inital prompt
              bakeryShop newBakery = new bakeryShop(1);
              pastryShop newPastry = new pastryShop(1);
@@ -19,6 +21,8 @@ namespace program
            Console.WriteLine("1. How many pastries you like to buy?");
             string pastryAnswer = Console.ReadLine();
             int newPastryAnswer = int.Parse(pastryAnswer);
+            ////////cant figure out how to get this line to work.
+            // double newPastryAnswer2 = newPastryAnswer + Math.Round(1.1, 1);
            
            
 
@@ -75,7 +79,7 @@ namespace program
 
         if (Decide == "checkout")
         {
-            Console.WriteLine("You had a combined total of "+ itemTotal +" items today"  +  " with a  total price of " + moneyTotal);
+            Console.WriteLine("You had a combined total of "+ itemTotal +" items today"  +  " with a total price of " + moneyTotal);
         }else
         {
             Main();
