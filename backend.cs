@@ -4,53 +4,44 @@ using System.Collections.Generic;
 
 namespace userShop.program
 {
-    class bakeryShop
+    public class bakeryShop
     {
-          private double _price{ get; set; }
-            public bakeryShop()
-            {
-            _price = 0;
-            }
+          public double price {get; set;}
+            
         ////////constructor
          public bakeryShop(double BreadPrice)
         {
         
-         _price = BreadPrice;
+         price = BreadPrice;
     }
-        public double breadPrice(int items2)
+        public double breadPrice(int items)
         {
-         double price = getPrice() * 3.33;
-         double totalPrice = price * items2;
+        price =1;
+         price = price * 3.33;
+         int totalPrice = (int)Math.Round((price * items), 1);
          return totalPrice;
 
         }
-        public double getPrice()
-        {
-            return _price;
-        }
+   
 
     }
 
-   class pastryShop
+        public class pastryShop
     {
-          private double _price{ get; set; }
-            public pastryShop()
-            {
-            _price = 1;
-            }
+         public double price{ get; set; }
+           
         //////////constructor
          public pastryShop(int pastryPrice)
         {
-         _price = pastryPrice;
+         price = pastryPrice;
          }
-          public double getPrice()
-        {
-            return _price;
-        }
+          
+        
         public double pastryPrice(int items)
         {
-            double price = getPrice() * 1.66;
-            double totalPrice = price * items;
+            price =1;
+             price = price * 1.66;
+            int totalPrice = (int)Math.Round((price * items), 1);
             return totalPrice;
 
         }

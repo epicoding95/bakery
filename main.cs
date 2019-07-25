@@ -39,7 +39,7 @@ namespace program
         }
         else if (newPastryAnswer >= 3)
         {
-           Console.WriteLine("Your total for your pastries is " + newPastry.pastryPrice(newPastryAnswer));
+           Console.WriteLine("Your total for your pastries is " + "$" + newPastry.pastryPrice(newPastryAnswer));
         }else
         {
             Console.WriteLine("please enter a valid number");
@@ -68,7 +68,7 @@ namespace program
             Console.WriteLine("Your total for your bread is $10 but you get a third loaf for free!");
         }else if (newBreadAnswer >= 3)
         {
-            Console.WriteLine("your total for your bread is " + newBakery.breadPrice(newBreadAnswer));
+            Console.WriteLine("your total for your bread is " + "$" +newBakery.breadPrice(newBreadAnswer));
         }else
         {
             Console.WriteLine("Please enter a valid number");
@@ -79,7 +79,7 @@ namespace program
 
         if (Decide == "checkout")
         {
-            Console.WriteLine("You had a combined total of "+ itemTotal +" items today"  +  " with a total price of " + moneyTotal);
+            Console.WriteLine("You had a combined total of "+ itemTotal +" items today"  +  " with a total price of " + "$" + moneyTotal);
         }else
         {
             Main();
