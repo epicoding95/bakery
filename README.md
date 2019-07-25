@@ -16,7 +16,7 @@ On this website you can search for any doctor in the Seattle area. You can searc
 
 ## Setup/Installation Requirements
 
-* go to https://github.com/epicoding95/doctor-api
+* go to https://github.com/epicoding95/Bakery
 * Clone this repository to your desktop and type "dotnet restore" then "dotnet run"
 
 ## Known Bugs
